@@ -37,3 +37,18 @@ for(let i=1; i<=n; i++){
     }
         console.log(row);
     }
+    //Chack if num is Palindrome or Not
+
+let num = Number(prompt("Enter Your Number"));
+ let reverse=0;
+ let temp=num;
+ while(temp!=0){
+    let rem=temp%10;
+    reverse=reverse*10+rem;
+    temp=Math.floor(temp/10);
+ }
+ if(num===reverse){
+    console.log("Palindrome");
+ }else{
+    console.log("Not Palindrome");
+ }
