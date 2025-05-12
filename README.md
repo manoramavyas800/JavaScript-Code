@@ -53,11 +53,11 @@ let num = Number(prompt("Enter Your Number"));
     console.log("Not Palindrome");
  }
 
- //print Fectorail 
+ //print Fectorial 
 
   let input=prompt("Enter your Number");
  let num = parseInt(input);
- function Fectorail(num){
+ function Fectorial(num){
 
  xFact=1;
  for(let i=1; i<=num; i++){
@@ -65,4 +65,4 @@ let num = Number(prompt("Enter Your Number"));
  }
    return xFact;
  }
- console.log(Fectorail(num));
+ console.log(Fectorial(num));
