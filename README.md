@@ -66,3 +66,28 @@ let num = Number(prompt("Enter Your Number"));
    return xFact;
  }
  console.log(Fectorial(num));
+
+ //Seive of Eratosthenes theorm to find prime number to given range n.
+
+ function seive(n){
+  let isPrime =new Array(n+1).fill(true);
+  isPrime[0]=isPrime[1]=false;
+        for (let j = 2; j*j <=n; j++) {
+            if (isPrime[j]) {
+                for(let i=j*j; i <=n; i+=j) {
+                    isPrime[i] = false;
+                }
+            }
+        }
+        for (let i = 2; i <= n; i++) {
+            if(isPrime[i]) {
+              console.log(i+" ");
+            }
+          }
+        }
+        let n=parseInt(prompt("Enter your Number"));
+        if(!isNaN(n)&&n>=2){
+        seive(n);
+        }else{
+          alert("ples enter a vaild number greater then 1.")
+        }
