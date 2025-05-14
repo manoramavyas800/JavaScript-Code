@@ -91,3 +91,21 @@ let num = Number(prompt("Enter Your Number"));
         }else{
           alert("ples enter a vaild number greater then 1.")
         }
+
+
+//print combination 
+
+function fectorail(n){
+ let  xFact=1;
+ for(let i=1; i<=n; i++){
+  xFact*=i;
+ }
+ return xFact;
+}
+ function Combination(n,r){
+  return fectorail(n)/(fectorail(r)*fectorail(n-r))
+ }
+ let n=parseInt(prompt("Enter value of n"));
+ let r= parseInt(prompt("Enter value of r"));
+ let cpr=Combination(n,r);
+ console.log(cpr);
