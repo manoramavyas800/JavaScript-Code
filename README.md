@@ -109,3 +109,15 @@ function fectorail(n){
  let r= parseInt(prompt("Enter value of r"));
  let cpr=Combination(n,r);
  console.log(cpr);
+
+ //Sum digites
+
+ let n=56784;
+let sum=0;
+let temp;
+while(n!=0){
+ temp=n%10;
+sum+=temp;
+n=Math.floor(n/10);
+}
+console.log(sum);
